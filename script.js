@@ -38,7 +38,24 @@ function chooseExpenses() {
 }
 
 chooseExpenses();
+   
 
+function chooseOptExpenses() {
+    for (let i = 1; i < 4; i++){
+        let b1 = prompt("Статья необязательных расходов?", '');
+    
+        if ( (typeof(b1)) != null && b1 != '') {
+            
+            console.log("ee!!!e");
+    
+            appData.optionalExpenses[i] = b1;
+        } else {
+            i--;
+        }
+    }
+}
+
+chooseOptExpenses();
 
 // let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
 //     a2 = prompt("Во сколько обойдется?", ''),
