@@ -65,6 +65,12 @@ let appData = {
             appData.optionalExpenses[i] = questionOptExpenses;
             console.log(appData.optionalExpenses);
         }
+    },
+    chooseIncome: function () {
+        let items = prompt("Что принесет доп доход? (Перечислите через запятую)", "");
+        appData.income = items.split(', ');
+        appData.income.push(prompt("Может что-то еще?"));
+        appData.income.sort();
     }
 };
 
