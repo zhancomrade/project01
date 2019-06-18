@@ -73,7 +73,7 @@ let appData = {
             items = prompt("Что принесет доп доход? (Перечислите через запятую)", ""); 
         }
         
-        appData.income = items.split(', ');s
+        appData.income = items.split(', ');
         appData.income.push(prompt("Может что-то еще?"));
         appData.income.sort();
 
